@@ -1,5 +1,12 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #e2e8f0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +17,76 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.note {
+  background: linear-gradient(180deg, #fef08a, #fef9c3);
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 0.1);
+  min-height: 17rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: pre-wrap;
+}
+
+.note span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #334155;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.note small {
+  color: #334155;
+  font-weight: 700;
+}
+
+.note .delete-icon {
+  color: #ef4444;
+}
+
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.7rem;
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.note-new {
+  min-height: 17rem;
+  background: linear-gradient(180deg, #a5f3fc, #cffafe);
+  padding: 1.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 4px 2px rgb(0 0 0 / 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.note-new textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: sans-serif;
+}
+
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
